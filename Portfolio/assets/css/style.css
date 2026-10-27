@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
   background-color: #f7f3ec;
   color: #352f29;
 }
@@ -35,19 +35,20 @@ a {
   color: #a17c5a;
 }
 
-.menu-btn {
-  display: none;
-  border: none;
-  background: none;
-  font-size: 25px;
-  cursor: pointer;
-}
-
 .home {
   min-height: 420px;
   display: flex;
   align-items: center;
   padding: 60px 10%;
+}
+
+.profile {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 24px;
+  transition: transform 0.3s ease;
 }
 
 .small-title {
@@ -73,13 +74,13 @@ a {
 }
 .main-btn {
   display: inline-block;
-  padding: 13px 22px;
   border: none;
+  padding: 13px 22px;
+  color: white;
   border-radius: 25px;
   background-color: #4b4035;
-  color: white;
-  cursor: pointer;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .main-btn:hover {
@@ -100,7 +101,7 @@ a {
   max-width: 650px;
   margin: auto;
   color: #756d64;
-  line-height: 1.9;
+  line-height: 2;
 }
 
 .skills-section {
@@ -110,6 +111,66 @@ a {
 .skills {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 20px;
+}
+.skill-card {
+  width: 150px;
+  padding: 25px 10px;
+  background-color: #f1e8dc;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  width: 220px;
+  padding: 25px;
+  background-color: white;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 15px #00000008;
+}
+
+.project-card h3 {
+  color: #765b43;
+}
+
+.project-card p {
+  color: #756d64;
+  line-height: 1.7;
+}
+
+.contact-section {
+  background-color: #eae0d3;
+}
+
+#contact-form {
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 14px;
+  border: 1px solid #d5c7b6;
+  border-radius: 8px;
+}
+
+footer {
+  color: #756d64;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
 }
